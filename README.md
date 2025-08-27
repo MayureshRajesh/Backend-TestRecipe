@@ -1,93 +1,70 @@
-Recipe Book API
+# Recipe Book API
+
 A backend API for a recipe sharing application, allowing users to create, share, and discover new recipes. This project is built with Node.js, Express, and MongoDB.
 
-Features
-User Authentication: Secure user registration and login using JSON Web Tokens (JWT).
+## Features
 
-CRUD Operations: Users can Create, Read, Update, and Delete their own recipes.
+  User Authentication: Secure user registration and login using JSON Web Tokens (JWT).
+  
+  CRUD Operations: Users can Create, Read, Update, and Delete their own recipes.
+  
+  Recipe Discovery: Search for recipes by title or ingredients.
+  
+  Social Interaction: Rate and comment on recipes.
 
-Recipe Discovery: Search for recipes by title or ingredients.
+## Technology Stack
 
-Social Interaction: Rate and comment on recipes.
+  Backend: Node.js, Express.js
+  
+  Database: MongoDB with Mongoose
+  
+  Authentication: JWT, bcrypt.js
 
-Technology Stack
-Backend: Node.js, Express.js
+## Getting Started
 
-Database: MongoDB with Mongoose
-
-Authentication: JWT, bcrypt.js
-
-Getting Started
 To get a local copy up and running, follow these simple steps.
 
-Prerequisites
+### Prerequisites
+
 Make sure you have the following installed on your machine:
 
-Node.js
+  * [Node.js](https://nodejs.org/en/)
+  * [MongoDB](https://www.mongodb.com/try/download/community)
+  * An API client like [Postman](https://www.postman.com/) or [Thunder Client](https://www.thunderclient.com/) for testing.
 
-MongoDB
+### Installation & Setup
 
-An API client like Postman or Thunder Client for testing.
+1.  **Clone the repository:**
 
-That is an excellent and very important question. You're thinking like a professional developer.
+    ```bash
+    git clone https://github.com/MayureshRajesh/Backend-TestRecipe.git
+    ```
 
-Someone who checks your GitHub project won't just run the code. They'll look for instructions and proof that it works. The single most important file for this is the README.md.
+2.  **Navigate to the project directory:**
 
-A great README.md is the front page and instruction manual for your project. It tells visitors what your project does, how to set it up, and how to use it. Here’s what you should include in yours to make it professional.
+    ```bash
+    cd Backend-TestRecipe
+    ```
 
-I've created a template for you. You can copy, paste, and edit this directly into your README.md file on GitHub.
+3.  **Install NPM packages:**
 
-Recipe Book API
-A backend API for a recipe sharing application, allowing users to create, share, and discover new recipes. This project is built with Node.js, Express, and MongoDB.
+    ```bash
+    npm install
+    ```
 
-Features
-User Authentication: Secure user registration and login using JSON Web Tokens (JWT).
+4.  **Create a `.env` file** in the root of the project. This file will hold your secret environment variables. Add the following, replacing the placeholder values with your own:
 
-CRUD Operations: Users can Create, Read, Update, and Delete their own recipes.
+    ```env
+    MONGO_URI=your_mongodb_connection_string
+    JWT_SECRET=your_super_secret_key
+    PORT=5000
+    ```
 
-Recipe Discovery: Search for recipes by title or ingredients.
+5.  **Start the server:**
 
-Social Interaction: Rate and comment on recipes.
-
-Technology Stack
-Backend: Node.js, Express.js
-
-Database: MongoDB with Mongoose
-
-Authentication: JWT, bcrypt.js
-
-Getting Started
-To get a local copy up and running, follow these simple steps.
-
-Prerequisites
-Make sure you have the following installed on your machine:
-
-Node.js
-
-MongoDB
-
-An API client like Postman or Thunder Client for testing.
-
-Installation & Setup
-Step1: Clone the repository:
-git clone https://github.com/MayureshRajesh/Backend-TestRecipe.git
-
-Step2:Navigate to the project directory:
-cd Backend-TestRecipe
-
-Step3:Install NPM packages:
-npm install
-
-Step4:Create a .env file in the root of the project. This file will hold your secret environment variables. Add the following, replacing the placeholder values with your own:
-
-MONGO_URI=your_mongodb_connection_string
-
-JWT_SECRET=your_super_secret_key
-
-PORT=5000
-
-Step5:Start the server:
-npm start
+    ```bash
+    npm start
+    ```
 
 ENDPOINTS: 
 
